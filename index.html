@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinFuel - Revolutionary Health Strips | 7Mounts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .orange-gradient { background: linear-gradient(135deg, #ff9a56 0%, #ffad56 100%); }
+        .green-gradient { background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%); }
+        .glass-effect { background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        .floating { animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        .fade-in { animation: fadeIn 0.8s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.05); }
+        .pulse-border { animation: pulseBorder 2s infinite; }
+        @keyframes pulseBorder { 0%, 100% { border-color: #ff9a56; } 50% { border-color: #22c55e; } }
+        .product-card { transition: all 0.3s ease; }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .strip-demo { position: relative; overflow: hidden; }
+        .strip-dissolve { animation: dissolve 3s ease-in-out infinite; }
+        @keyframes dissolve { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden">
+                        <!-- 7Mounts Logo -->
+                        <svg viewBox="0 0 100 100" class="w-full h-full">
+                            <circle cx="50" cy="50" r="45" fill="url(#logoGradient)"/>
+                            <text x="50" y="65" text-anchor="middle" fill="white" font-family="Plus Jakarta Sans" font-weight="bold" font-size="32">7</text>
+                            <defs>
+                                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff9a56"/>
+                                    <stop offset="100%" style="stop-color:#ffad56"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="font-bold text-gray-900 text-lg">ThinFuel</div>
+                        <div class="text-xs text-gray-500">by 7Mounts</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#products" class="text-gray-700 hover:text-orange-500 font-medium transition">Products</a>
+                    <a href="#how-it-works" class="text-gray-700 hover:text-orange-500 font-medium transition">How It Works</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-orange-500 font-medium transition">Benefits</a>
+                    <button class="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-50 via-white to-orange-50 pt-20 pb-12 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="inline-flex items-center bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        🚀 Revolutionary Thin Film Technology
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        The Future of
+                        <span class="bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
+                            Health Supplements
+                        </span>
+                        is Here
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Experience instant relief and optimal health with ThinFuel's innovative oral strips. 
+                        No water needed, faster absorption, precise dosing - just peel, place, and feel the difference.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <button class="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all">
+                            Explore Products →
+                        </button>
+                        <button class="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-2xl font-bold text-lg hover:border-orange-500 hover:text-orange-500 transition-all">
+                            Watch Demo
+                        </button>
+                    </div>
+                    <div class="flex items-center space-x-6 text-sm text-gray-500">
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                            FDA Approved Technology
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                            ISO Certified Manufacturing
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <!-- Hero Product Showcase -->
+                    <div class="floating">
+                        <div class="bg-white rounded-3xl shadow-2xl p-6 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                            <!-- HERO: Simethicone Product Image -->
+                            <div class="mb-4">
+                                <img src="images/simethicone-hero.jpg" 
+                                     alt="ThinFuel Simethicone Oral Strips - Fast-Acting Relief for Gas & Bloating" 
+                                     class="w-full h-auto rounded-2xl shadow-lg" />
+                            </div>
+                            <div class="text-center">
+                                <div class="orange-gradient w-20 h-4 rounded-full mx-auto mb-2 strip-dissolve"></div>
+                                <p class="text-gray-600 text-sm font-medium">Instant Relief • No Water Needed</p>
+                                <p class="text-gray-500 text-xs mt-1">Peel • Place • Dissolve</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Floating Product Elements -->
+                    <div class="absolute -top-4 -right-4 floating" style="animation-delay: 0.5s;">
+                        <div class="w-16 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl shadow-lg flex items-center justify-center text-white text-xs font-bold">
+                            Sleep
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-8 -left-8 floating" style="animation-delay: 1s;">
+                        <div class="w-16 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-xl shadow-lg flex items-center justify-center text-white text-xs font-bold">
+                            Vitamins
+                        </div>
+                    </div>
+                    <div class="absolute top-1/2 -right-8 floating" style="animation-delay: 1.5s;">
+                        <div class="w-16 h-20 bg-gradient-to-br from-pink-400 to-orange-400 rounded-xl shadow-lg flex items-center justify-center text-white text-xs font-bold">
+                            Beauty
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hero Bottom Stats/Features -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="text-center bg-white/60 backdrop-blur-sm rounded-2xl p-4 hover-scale">
+                    <div class="text-2xl font-bold text-orange-600 mb-1">5-15min</div>
+                    <div class="text-sm text-gray-600">Fast Absorption</div>
+                </div>
+                <div class="text-center bg-white/60 backdrop-blur-sm rounded-2xl p-4 hover-scale">
+                    <div class="text-2xl font-bold text-blue-600 mb-1">30+</div>
+                    <div class="text-sm text-gray-600">Health Solutions</div>
+                </div>
+                <div class="text-center bg-white/60 backdrop-blur-sm rounded-2xl p-4 hover-scale">
+                    <div class="text-2xl font-bold text-green-600 mb-1">100%</div>
+                    <div class="text-sm text-gray-600">Natural Ingredients</div>
+                </div>
+                <div class="text-center bg-white/60 backdrop-blur-sm rounded-2xl p-4 hover-scale">
+                    <div class="text-2xl font-bold text-purple-600 mb-1">5M+</div>
+                    <div class="text-sm text-gray-600">Daily Production</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">How ThinFuel Works</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Three simple steps to better health. No pills, no water, no hassle.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center group hover-scale">
+                    <div class="relative mb-8">
+                        <!-- Step 1: Peel Visual -->
+                        <div class="w-32 h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl mx-auto flex items-center justify-center group-hover:shadow-xl transition-all">
+                            <div class="strip-demo">
+                                <div class="w-16 h-10 bg-gradient-to-r from-purple-400 to-purple-600 rounded-lg relative overflow-hidden">
+                                    <div class="absolute top-1 right-1 w-3 h-3 bg-white/30 rounded-full"></div>
+                                    <div class="absolute bottom-1 left-1 text-white text-xs font-bold">1</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Peel</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Simply peel open the convenient pouch to reveal your personalized health strip.
+                    </p>
+                </div>
+                <div class="text-center group hover-scale">
+                    <div class="relative mb-8">
+                        <!-- Step 2: Place Visual -->
+                        <div class="w-32 h-32 bg-gradient-to-br from-green-100 to-teal-100 rounded-3xl mx-auto flex items-center justify-center group-hover:shadow-xl transition-all">
+                            <div class="relative">
+                                <!-- Mouth/Tongue Representation -->
+                                <div class="w-20 h-16 bg-gradient-to-r from-pink-200 to-red-200 rounded-full relative">
+                                    <div class="absolute top-2 left-1/2 transform -translate-x-1/2 w-12 h-8 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-lg strip-dissolve"></div>
+                                    <div class="absolute bottom-1 left-1/2 transform -translate-x-1/2 text-gray-600 text-xs font-bold">2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Place</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Place the strip on your tongue and let our advanced thin film technology work.
+                    </p>
+                </div>
+                <div class="text-center group hover-scale">
+                    <div class="relative mb-8">
+                        <!-- Step 3: Dissolve Visual -->
+                        <div class="w-32 h-32 bg-gradient-to-br from-orange-100 to-yellow-100 rounded-3xl mx-auto flex items-center justify-center group-hover:shadow-xl transition-all">
+                            <div class="relative">
+                                <div class="w-16 h-16 rounded-full bg-gradient-to-r from-orange-400 to-yellow-400 flex items-center justify-center relative overflow-hidden">
+                                    <!-- Dissolving effect -->
+                                    <div class="absolute inset-0 bg-gradient-to-t from-transparent via-white/20 to-white/40 strip-dissolve"></div>
+                                    <span class="text-white text-lg font-bold relative z-10">3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Dissolve</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Experience instant relief as the strip dissolves completely in seconds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section id="products" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Choose Your Health Solution</h2>
+                <p class="text-xl text-gray-600">Precision wellness in every strip</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Digestive Health - Simethicone -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden product-card">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="images/simethicone-card.jpg" 
+                             alt="ThinFuel Simethicone Oral Strips - Digestive Relief" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                        <div class="absolute inset-0 bg-purple-600/20"></div>
+                        <div class="absolute top-4 right-4 text-white text-xs font-bold bg-black/60 px-2 py-1 rounded">30 STRIPS</div>
+                        <div class="absolute bottom-4 left-4 text-white bg-black/60 backdrop-blur-sm rounded-lg p-2">
+                            <h3 class="text-lg font-bold mb-1">Digestive Relief</h3>
+                            <p class="text-xs opacity-90">Fast-acting gas & bloating relief</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <div class="text-xl font-bold text-gray-900">Simethicone</div>
+                                <div class="text-sm text-gray-500">Anti-flatulent</div>
+                            </div>
+                            <div class="text-purple-600 text-2xl">💊</div>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>• Relieves gas & bloating</li>
+                            <li>• Regulates bowel movements</li>
+                            <li>• Works quickly</li>
+                        </ul>
+                        <button class="w-full bg-purple-100 text-purple-700 py-3 rounded-xl font-semibold hover:bg-purple-200 transition">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sleep - Melatonin -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden product-card">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="images/melatonin-card.jpg" 
+                             alt="ThinFuel Melatonin Oral Strips - Better Sleep" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                        <div class="absolute inset-0 bg-blue-600/20"></div>
+                        <div class="absolute top-4 right-4 text-white text-xs font-bold bg-black/60 px-2 py-1 rounded">30 STRIPS</div>
+                        <div class="absolute bottom-4 left-4 text-white bg-black/60 backdrop-blur-sm rounded-lg p-2">
+                            <h3 class="text-lg font-bold mb-1">Better Sleep</h3>
+                            <p class="text-xs opacity-90">Natural sleep support</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <div class="text-xl font-bold text-gray-900">Melatonin</div>
+                                <div class="text-sm text-gray-500">Sleep aid</div>
+                            </div>
+                            <div class="text-blue-600 text-2xl">🌙</div>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>• Regulates circadian rhythm</li>
+                            <li>• Promotes relaxation</li>
+                            <li>• Non-addictive</li>
+                        </ul>
+                        <button class="w-full bg-blue-100 text-blue-700 py-3 rounded-xl font-semibold hover:bg-blue-200 transition">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Beauty - Hyaluronic Acid -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden product-card">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="images/hyaluronic-acid-card.jpg" 
+                             alt="ThinFuel Hyaluronic Acid + Vitamin C Oral Strips - Beauty & Skin" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                        <div class="absolute inset-0 bg-pink-500/20"></div>
+                        <div class="absolute top-4 right-4 text-white text-xs font-bold bg-black/60 px-2 py-1 rounded">30 STRIPS</div>
+                        <div class="absolute bottom-4 left-4 text-white bg-black/60 backdrop-blur-sm rounded-lg p-2">
+                            <h3 class="text-lg font-bold mb-1">Beauty & Skin</h3>
+                            <p class="text-xs opacity-90">Radiant skin from within</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <div class="text-xl font-bold text-gray-900">Hyaluronic Acid</div>
+                                <div class="text-sm text-gray-500">+ Vitamin C</div>
+                            </div>
+                            <div class="text-pink-600 text-2xl">✨</div>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>• Locks in moisture</li>
+                            <li>• Reduces dark spots</li>
+                            <li>• Boosts collagen</li>
+                        </ul>
+                        <button class="w-full bg-pink-100 text-pink-700 py-3 rounded-xl font-semibold hover:bg-pink-200 transition">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vitamins - Multivitamin -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden product-card">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="images/multivitamin-card.jpg" 
+                             alt="ThinFuel Multivitamin Oral Strips - Daily Nutrition" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                        <div class="absolute inset-0 bg-green-600/20"></div>
+                        <div class="absolute top-4 right-4 text-white text-xs font-bold bg-black/60 px-2 py-1 rounded">30 STRIPS</div>
+                        <div class="absolute bottom-4 left-4 text-white bg-black/60 backdrop-blur-sm rounded-lg p-2">
+                            <h3 class="text-lg font-bold mb-1">Daily Nutrition</h3>
+                            <p class="text-xs opacity-90">Complete vitamin support</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <div class="text-xl font-bold text-gray-900">Multivitamin</div>
+                                <div class="text-sm text-gray-500">Essential nutrients</div>
+                            </div>
+                            <div class="text-green-600 text-2xl">🌿</div>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>• Improves focus & memory</li>
+                            <li>• Boosts energy levels</li>
+                            <li>• Supports immunity</li>
+                        </ul>
+                        <button class="w-full bg-green-100 text-green-700 py-3 rounded-xl font-semibold hover:bg-green-200 transition">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Products Showcase -->
+            <div class="mt-16">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">More Health Solutions</h3>
+                    <p class="text-gray-600">Comprehensive wellness for every aspect of your health</p>
+                </div>
+                
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                    <!-- Senna Strips -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-scale border border-gray-100 group">
+                        <div class="relative h-32 bg-gradient-to-br from-amber-100 to-orange-100 p-4 flex items-center justify-center">
+                            <img src="images/senna-card.jpg" 
+                                 alt="ThinFuel Senna Strips - Natural Digestive Relief" 
+                                 class="w-20 h-20 rounded-xl object-cover shadow-lg group-hover:scale-110 transition-transform duration-300" />
+                            <div class="absolute top-3 right-3 bg-white/80 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-semibold text-amber-700">
+                                30 STRIPS
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="text-lg font-bold text-gray-900 mb-1">Senna Strips</h4>
+                            <p class="text-sm text-gray-500 mb-3">Natural digestive relief</p>
+                            <div class="flex items-center justify-center text-xs text-amber-600 bg-amber-50 px-3 py-1 rounded-full">
+                                <span class="w-2 h-2 bg-amber-400 rounded-full mr-2"></span>
+                                Gentle Formula
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Folic Acid -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-scale border border-gray-100 group">
+                        <div class="relative h-32 bg-gradient-to-br from-pink-100 to-rose-100 p-4 flex items-center justify-center">
+                            <img src="images/folic-acid-card.jpg" 
+                                 alt="ThinFuel Folic Acid Strips - Prenatal Support" 
+                                 class="w-20 h-20 rounded-xl object-cover shadow-lg group-hover:scale-110 transition-transform duration-300" />
+                            <div class="absolute top-3 right-3 bg-white/80 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-semibold text-pink-700">
+                                30 STRIPS
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="text-lg font-bold text-gray-900 mb-1">Folic Acid</h4>
+                            <p class="text-sm text-gray-500 mb-3">Prenatal & women's health</p>
+                            <div class="flex items-center justify-center text-xs text-pink-600 bg-pink-50 px-3 py-1 rounded-full">
+                                <span class="w-2 h-2 bg-pink-400 rounded-full mr-2"></span>
+                                Essential Vitamin
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vitamin D3+K2 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-scale border border-gray-100 group">
+                        <div class="relative h-32 bg-gradient-to-br from-yellow-100 to-amber-100 p-4 flex items-center justify-center">
+                            <img src="images/vitamin-d3-k2-card.jpg" 
+                                 alt="ThinFuel Vitamin D3+K2 Strips - Bone Health" 
+                                 class="w-20 h-20 rounded-xl object-cover shadow-lg group-hover:scale-110 transition-transform duration-300" />
+                            <div class="absolute top-3 right-3 bg-white/80 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-semibold text-yellow-700">
+                                30 STRIPS
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="text-lg font-bold text-gray-900 mb-1">Vitamin D3+K2</h4>
+                            <p class="text-sm text-gray-500 mb-3">Bone & immune support</p>
+                            <div class="flex items-center justify-center text-xs text-yellow-600 bg-yellow-50 px-3 py-1 rounded-full">
+                                <span class="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span>
+                                Bone Health
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Biotin + Zinc -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-scale border border-gray-100 group">
+                        <div class="relative h-32 bg-gradient-to-br from-indigo-100 to-purple-100 p-4 flex items-center justify-center">
+                            <img src="images/biotin-zinc-card.jpg" 
+                                 alt="ThinFuel Biotin + Zinc Strips - Hair & Nail Health" 
+                                 class="w-20 h-20 rounded-xl object-cover shadow-lg group-hover:scale-110 transition-transform duration-300" />
+                            <div class="absolute top-3 right-3 bg-white/80 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-semibold text-indigo-700">
+                                30 STRIPS
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h4 class="text-lg font-bold text-gray-900 mb-1">Biotin + Zinc</h4>
+                            <p class="text-sm text-gray-500 mb-3">Hair, skin & nail health</p>
+                            <div class="flex items-center justify-center text-xs text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">
+                                <span class="w-2 h-2 bg-indigo-400 rounded-full mr-2"></span>
+                                Beauty Support
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View All Products Button -->
+                <div class="text-center mt-8">
+                    <button class="bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 px-8 py-3 rounded-2xl font-semibold hover:from-orange-100 hover:to-yellow-100 hover:text-orange-700 transition-all duration-300 border border-gray-200">
+                        View All 30+ Products →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-8">Why Choose ThinFuel?</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">⚡</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">3x Faster Absorption</h3>
+                                <p class="text-gray-600">Direct oral delivery bypasses digestive system for rapid results in 5-15 minutes vs 30-60 minutes for pills</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">🎯</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Precise Dosing</h3>
+                                <p class="text-gray-600">Advanced thin film technology ensures exact dosage every time - no guesswork or measurement errors</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">📱</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Ultimate Convenience</h3>
+                                <p class="text-gray-600">Pocket-friendly, no water needed, perfect for travel, work, or anywhere life takes you</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">🌱</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Eco-Friendly Innovation</h3>
+                                <p class="text-gray-600">Biodegradable strips with minimal packaging reduce environmental impact compared to traditional pills</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl p-8 transform -rotate-3 hover:rotate-0 transition-transform duration-500">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">🚀</div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">3x Faster Relief</h3>
+                            <p class="text-gray-600 mb-6">Experience the difference of advanced thin film technology</p>
+                            <div class="bg-white rounded-2xl p-4 shadow-lg">
+                                <div class="flex justify-between text-sm text-gray-500 mb-2">
+                                    <span>Traditional Pills</span>
+                                    <span>ThinFuel Strips</span>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <div class="flex-1 bg-gray-200 rounded-full h-2 relative overflow-hidden">
+                                        <div class="absolute inset-0 bg-gray-300 w-1/3"></div>
+                                    </div>
+                                    <div class="flex-1 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full h-2"></div>
+                                </div>
+                                <div class="flex justify-between text-xs text-gray-500 mt-1">
+                                    <span>30-60 mins</span>
+                                    <span>5-15 mins</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Technology Showcase -->
+                    <div class="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-xl floating" style="animation-delay: 1s;">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-gradient-to-r from-green-400 to-blue-400 rounded-full mx-auto mb-2 flex items-center justify-center">
+                                <span class="text-white text-xs font-bold">ISO</span>
+                            </div>
+                            <div class="text-xs font-semibold text-gray-900">Certified</div>
+                            <div class="text-xs text-gray-500">Technology</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stir Up Beverage Section -->
+    <section class="py-20 bg-gradient-to-br from-green-50 to-yellow-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    ☕ Also Available: Beverage Strips
+                </div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Stir Up Your Wellness Routine</h2>
+                <p class="text-xl text-gray-600">Revolutionary tea and coffee strips - no microplastics, just pure wellness</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Green Coffee -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover-scale">
+                    <div class="bg-gradient-to-br from-green-600 to-green-700 p-6 text-white">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold">Green Coffee</h3>
+                                <p class="text-sm opacity-90">Weight management</p>
+                            </div>
+                            <div class="w-12 h-16 bg-white/20 rounded-lg flex items-center justify-center">
+                                <span class="text-xs font-bold">24</span>
+                            </div>
+                        </div>
+                        <!-- Coffee Cup Visual -->
+                        <div class="bg-white/20 rounded-xl p-3 text-center">
+                            <div class="w-8 h-8 bg-amber-600 rounded-full mx-auto mb-2"></div>
+                            <div class="text-xs">Ready to Drink</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                            <li>• Supports weight loss</li>
+                            <li>• Boosts energy & focus</li>
+                            <li>• Rich in antioxidants</li>
+                            <li>• No microplastics</li>
+                        </ul>
+                        <button class="w-full bg-green-100 text-green-700 py-3 rounded-xl font-semibold hover:bg-green-200 transition">
+                            Explore Stir Up
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tea Collection -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover-scale">
+                    <div class="bg-gradient-to-br from-amber-600 to-orange-600 p-6 text-white">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold">Tea Collection</h3>
+                                <p class="text-sm opacity-90">Multiple flavors</p>
+                            </div>
+                            <div class="w-12 h-16 bg-white/20 rounded-lg flex items-center justify-center">
+                                <span class="text-xs font-bold">24</span>
+                            </div>
+                        </div>
+                        <div class="bg-white/20 rounded-xl p-3 text-center">
+                            <div class="w-8 h-8 mx-auto mb-2 flex items-center justify-center">
+                                <div class="flex space-x-1">
+                                    <div class="w-2 h-2 bg-green-300 rounded-full"></div>
+                                    <div class="w-2 h-2 bg-amber-300 rounded-full"></div>
+                                    <div class="w-2 h-2 bg-orange-300 rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="text-xs">Cardamom • Masala • Ginger</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                            <li>• Heart health support</li>
+                            <li>• Mental alertness</li>
+                            <li>• Traditional flavors</li>
+                            <li>• Eco-friendly alternative</li>
+                        </ul>
+                        <button class="w-full bg-orange-100 text-orange-700 py-3 rounded-xl font-semibold hover:bg-orange-200 transition">
+                            View Flavors
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Wellness Teas -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover-scale">
+                    <div class="bg-gradient-to-br from-purple-600 to-blue-600 p-6 text-white">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold">Wellness Teas</h3>
+                                <p class="text-sm opacity-90">Functional benefits</p>
+                            </div>
+                            <div class="w-12 h-16 bg-white/20 rounded-lg flex items-center justify-center">
+                                <span class="text-xs font-bold">24</span>
+                            </div>
+                        </div>
+                        <div class="bg-white/20 rounded-xl p-3 text-center">
+                            <div class="w-8 h-8 mx-auto mb-2 flex items-center justify-center">
+                                <div class="w-4 h-4 bg-white/40 rounded-full"></div>
+                            </div>
+                            <div class="text-xs">Ashwagandha • Chamomile</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                            <li>• Stress relief</li>
+                            <li>• Better sleep quality</li>
+                            <li>• Anti-inflammatory</li>
+                            <li>• Natural wellness</li>
+                        </ul>
+                        <button class="w-full bg-purple-100 text-purple-700 py-3 rounded-xl font-semibold hover:bg-purple-200 transition">
+                            Discover More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-orange-500 to-yellow-500">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Transform Your Health?</h2>
+            <p class="text-xl text-white/90 mb-8">
+                Join thousands who've made the switch to smarter health solutions
+            </p>
+            <div class="bg-white rounded-3xl p-8 shadow-2xl pulse-border border-4">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Get Your Personalized Health Kit</h3>
+                <form class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-orange-500 focus:outline-none transition">
+                        <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-orange-500 focus:outline-none transition">
+                    </div>
+                    <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-orange-500 focus:outline-none transition">
+                    <select class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-orange-500 focus:outline-none transition">
+                        <option>Select Your Primary Health Goal</option>
+                        <option>Digestive Health (Gas, Bloating)</option>
+                        <option>Better Sleep & Recovery</option>
+                        <option>Beauty & Skin Health</option>
+                        <option>Daily Nutrition & Energy</option>
+                        <option>Weight Management</option>
+                        <option>Prenatal Care</option>
+                        <option>Multiple Health Goals</option>
+                    </select>
+                    <div class="bg-gray-50 rounded-xl p-4">
+                        <div class="flex items-center space-x-4 text-sm text-gray-600">
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                                Free consultation with health expert
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                                Personalized product recommendations
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 text-sm text-gray-600 mt-2">
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                                Free sample kit (3-day supply)
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                                No purchase commitment
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-orange-500 to-yellow-500 text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all">
+                        Get My Free Health Kit →
+                    </button>
+                </form>
+                <p class="text-xs text-gray-500 mt-4">
+                    🔒 Your information is secure and will never be shared. Free consultation typically takes 15-20 minutes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology & Trust Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Backed by Science & Innovation</h2>
+                <p class="text-lg text-gray-600">LN Laboratories' advanced manufacturing meets global quality standards</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">ISO</span>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">ISO Certified</h4>
+                    <p class="text-sm text-gray-600">9001, 14001 & 13485 certifications</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">cGMP</span>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">cGMP Facility</h4>
+                    <p class="text-sm text-gray-600">FDA registered manufacturing</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-white font-bold text-xs">5M</span>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Daily Capacity</h4>
+                    <p class="text-sm text-gray-600">5 million units per day production</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-white font-bold text-xs">2020</span>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Established</h4>
+                    <p class="text-sm text-gray-600">Vision 2025 global expansion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">7</span>
+                        </div>
+                        <div>
+                            <div class="font-bold text-lg">ThinFuel</div>
+                            <div class="text-xs text-gray-400">by 7Mounts</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Pioneering innovation in health and wellness through advanced thin film technology.
+                    </p>
+                    <div class="text-xs text-gray-500">
+                        Powered by LN Laboratories<br>
+                        ISO Certified • cGMP Facility
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">ThinFuel Products</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Digestive Health</a></li>
+                        <li><a href="#" class="hover:text-white transition">Sleep Support</a></li>
+                        <li><a href="#" class="hover:text-white transition">Beauty & Skin</a></li>
+                        <li><a href="#" class="hover:text-white transition">Daily Vitamins</a></li>
+                        <li><a href="#" class="hover:text-white transition">Prenatal Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Stir Up Beverages</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Green Coffee</a></li>
+                        <li><a href="#" class="hover:text-white transition">Tea Collection</a></li>
+                        <li><a href="#" class="hover:text-white transition">Wellness Teas</a></li>
+                        <li><a href="#" class="hover:text-white transition">Why Strips?</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">About 7Mounts</a></li>
+                        <li><a href="#" class="hover:text-white transition">Technology</a></li>
+                        <li><a href="#" class="hover:text-white transition">Manufacturing</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                    <div class="mt-6">
+                        <div class="flex space-x-3">
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition cursor-pointer">
+                                <span class="text-xs">f</span>
+                            </div>
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition cursor-pointer">
+                                <span class="text-xs">in</span>
+                            </div>
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition cursor-pointer">
+                                <span class="text-xs">@</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 7Mounts. All rights reserved. | Manufactured by LN Laboratories | Pioneering Innovation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.product-card, .hover-scale').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
